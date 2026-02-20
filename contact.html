@@ -12,84 +12,83 @@
 
 <body class="bg-light">
     <header id="header py-5">
-            <nav class="navbar navbar-expand-lg  fixed-top bg-white">
-  <div class="container">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
 
 
-    <a class="navbar-brand fw-bold text-primary" href="index.html">
-      🏥 Salam
-    </a>
+                <img src="images/logo.png" alt="Website Logo" width="120" height="100">
 
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
 
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto align-items-lg-center ">
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center ">
 
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
-        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="doctors.html">Doctors</a>
-        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html">Doctors</a>
+                        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
-        </li>
-
-
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">gallery</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="departments.html">Departments</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="booking.html">Booking</a>
-        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
 
 
-        <li class="nav-item">
-          <a class="nav-link" href="records.html">Records</a>
-        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">gallery</a>
+                        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="departments.html">Departments</a>
+                        </li>
 
-        <li class="nav-item" id="loginItem">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-
-        <li class="nav-item" id="registerItem">
-          <a class="nav-link" href="register.html">Register</a>
-        </li>
-
-        <li class="nav-item" id="logoutItem" style="display:none;">
-          <a class="nav-link fw-bold" href="#" onclick="logout()">Logout</a>
-        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html">Booking</a>
+                        </li>
 
 
-        <li class="nav-item ms-lg-3">
-          <a href="booking.html" class="btn btn-info rounded-pill px-4">
-            Appointment
-          </a>
-        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="records.html">Records</a>
+                        </li>
 
-      </ul>
-    </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
 
-  </div>
-</nav>
+                        <li class="nav-item" id="loginItem">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+
+                        <li class="nav-item" id="registerItem">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+
+                        <li class="nav-item" id="logoutItem" style="display:none;">
+                            <a class="nav-link fw-bold" href="#" onclick="logout()">Logout</a>
+                        </li>
+
+
+                        <li class="nav-item ms-lg-3">
+                            <a href="booking.html" class="btn btn-info rounded-pill px-4">
+                                Appointment
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     </header>
 
-    <main style="padding-top: 80px;">
+    <main style="padding-top: 10px;">
         <section class="page-title">
             <h2 class="text-center my-4">Contact Us</h2>
         </section>
@@ -152,17 +151,17 @@
                             <form id="form">
                                 <div class="mb-3">
                                     <label class="form-label">Name</label>
-                                    <input type="text" id="name" class="form-control">
+                                    <input type="text" id="name" class="form-control" required>
                                     <span id="nameError" class="text-danger"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Email</label>
-                                    <input type="email" id="email" class="form-control">
+                                    <input type="email" id="email" class="form-control" required>
                                     <span id="emailError" class="text-danger"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="4"></textarea>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
                                     <span id="messageError" class="text-danger"></span>
                                 </div>
                                 <button class="btn next-btn w-100">Book Now</button>
@@ -174,63 +173,63 @@
 
         </section>
     </main>
-  <footer class="footer pt-5">
-  <div class="container">
-    <div class="row g-4">
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4">
 
-      <div class="col-lg-4 col-md-6">
-        <h4 class="footer-logo mb-3">🏥 Salam</h4>
-        <p class="footer-text">
-          We provide trusted healthcare services with experienced doctors,
-          modern equipment, and a patient-first approach.
-        </p>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-logo mb-3">🏥 Salam</h4>
+                    <p class="footer-text">
+                        We provide trusted healthcare services with experienced doctors,
+                        modern equipment, and a patient-first approach.
+                    </p>
 
-        <div class="social-icons mt-3">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Departments</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Neurology</a></li>
+                        <li><a href="#">Pulmonology</a></li>
+                        <li><a href="#">Diagnostics</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Us</h5>
+                    <p class="footer-text">
+                        📍 Cairo, Egypt<br>
+                        📞 +20 111 222 3333<br>
+                        ✉ info@salamhospital.com
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="mt-5">
+
+            <div class="text-center pb-3">
+                <p class="mb-0">© 2026 Salam Hospital. All Rights Reserved</p>
+            </div>
         </div>
-      </div>
-
-      <div class="col-lg-2 col-md-6">
-        <h5>Quick Links</h5>
-        <ul class="footer-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Doctors</a></li>
-          <li><a href="#">Departments</a></li>
-          <li><a href="#">Services</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <h5>Our Services</h5>
-        <ul class="footer-links">
-          <li><a href="#">Cardiology</a></li>
-          <li><a href="#">Neurology</a></li>
-          <li><a href="#">Pulmonology</a></li>
-          <li><a href="#">Diagnostics</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <h5>Contact Us</h5>
-        <p class="footer-text">
-          📍 Cairo, Egypt<br>
-          📞 +20 111 222 3333<br>
-          ✉ info@salamhospital.com
-        </p>
-      </div>
-
-    </div>
-
-    <hr class="mt-5">
-
-    <div class="text-center pb-3">
-      <p class="mb-0">© 2026 Salam Hospital. All Rights Reserved</p>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 </body>
 
