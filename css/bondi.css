@@ -1,0 +1,158 @@
+body{
+  font-family: "Roboto", sans-serif;
+}
+.navbar-brand img {
+  height: 40px;   
+  width: auto; 
+}
+.navbar{
+  background-color: green;
+}
+.navbar .navbar-nav .nav-link{
+  color: white;
+
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus{
+  color:darkslategray;
+}
+.search{
+  border-left: 0.5px solid darkslategray;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.search svg{
+  color: darkslategray;
+}
+.navbar-nav{
+  gap: 20px;
+}
+.navbar .navbar-toggler{
+  color: white;
+  font-size: 20px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
+.landing{
+  background-color:darkkhaki;
+  height: calc(80vh);
+}
+.text-center button{
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+.card img {
+  height: 180px;
+  align-items: center;
+
+}
+.card h5  {
+  text-align: center;
+}
+.card-text{
+  text-align: center;
+  align-items: center;
+}
+.card-body{
+  align-items: center;
+  text-align: center;
+}
+.main-title h2{
+  font-weight: bolder;
+}
+.img-custom {
+  width: 100%;          
+  height: 250px;        
+  object-fit: cover;    
+  border-radius: 8px;   
+}
+.card-title{
+  color: green;
+  font-weight: bold;
+}
+.apply-button .btn-primary{
+  background-color: rgb(241, 149, 44);
+  border-radius: 30px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  
+}
+
+.paragraph p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.policy-box,
+.terms-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+.content-section {
+    background: white;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.intro-text {
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #27ae60;
+}
+
+.terms-page h4 {
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+.terms-box h5 {
+    color: #216f37;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.terms-box span {
+    display: inline-block;
+    min-width: 25px;
+    height: 25px;
+    background-color: #e0cd00;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 600;
+    margin-right: 8px;
+    font-size: 0.9rem;
+    padding: 0 8px;
+}
+
+.offers-text{
+  height: 200px;
+  background-color: red;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  border-radius: 12px;
+}
+.offers-text h1{
+  font-weight: 800;
+  color: hsla(210, 17%, 98%, 0.883);
+}
+

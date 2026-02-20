@@ -1,0 +1,355 @@
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="auth.js"></script>
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<body class="home-page">
+      <nav class="navbar navbar-expand-lg  fixed-top bg-white">
+  <div class="container">
+
+
+    <a class="navbar-brand fw-bold text-primary" href="index.html">
+      🏥 Salam
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center ">
+
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="doctors.html">Doctors</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="departments.html">Departments</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="booking.html">Booking</a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="records.html">Records</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        
+        <li class="nav-item" id="loginItem">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+
+        <li class="nav-item" id="registerItem">
+          <a class="nav-link" href="register.html">Register</a>
+        </li>
+
+        <li class="nav-item" id="logoutItem" style="display:none;">
+          <a class="nav-link fw-bold" href="#" onclick="logout()">Logout</a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a href="booking.html" class="btn btn-info rounded-pill px-4">
+            Appointment
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<section class="doctors-page py-5">
+  <div class="container text-center">
+    <h1 class="doctors-title fw-bold mb-3">Doctors</h1>
+    <p class="doctors-desc mx-auto">
+      Meet our expert doctors who provide trusted medical care with professionalism and compassion.
+    </p>
+  </div>
+  <div class="container mt-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-3 col-md-6">
+  <div class="doctor-card text-center">
+
+    <img src="images/img/health/staff-1.webp" class="img-fluid doctor-img" alt="doctor">
+
+    <div class="doctor-info p-4">
+      <h5 class="fw-bold">Dr. Ahmed Khairy</h5>
+      <span class="doctor-role">Chief of Cardiology</span>
+
+      <p class="doctor-desc mt-3">
+        Providing expert heart care with modern technology and compassionate treatment.
+      </p>
+
+      <div class="experience-badge mb-3">
+        15+ YEARS EXPERIENCE
+      </div>
+
+      <a href="#" class="btn btn-info rounded-pill px-4">
+        Book Appointment
+      </a>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+  <div class="doctor-card text-center">
+
+    <img src="images/img/health/staff-3.webp" class="img-fluid doctor-img" alt="doctor">
+
+    <div class="doctor-info p-4">
+      <h5 class="fw-bold">Dr. Marian Rauf</h5>
+      <span class="doctor-role">Chief of Cardiology</span>
+
+      <p class="doctor-desc mt-3">
+        Providing expert heart care with modern technology and compassionate treatment.
+      </p>
+
+      <div class="experience-badge mb-3">
+        15+ YEARS EXPERIENCE
+      </div>
+
+      <a href="#" class="btn btn-info rounded-pill px-4">
+        Book Appointment
+      </a>
+
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6">
+  <div class="doctor-card text-center">
+
+    <img src="images/img/health/staff-2.webp" class="img-fluid doctor-img" alt="doctor">
+
+    <div class="doctor-info p-4">
+      <h5 class="fw-bold">Dr. Khaled Elsokkary</h5>
+      <span class="doctor-role">Neurology</span>
+
+      <p class="doctor-desc mt-3">
+        Expert in managing brain, spine, and nervous system disorders with modern diagnostic techniques.
+      </p>
+
+      <div class="experience-badge mb-3">
+        12+ YEARS EXPERIENCE
+      </div>
+
+      <a href="#" class="btn btn-info rounded-pill px-4">
+        Book Appointment
+      </a>
+
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6">
+  <div class="doctor-card text-center">
+
+    <img src="images/img/health/staff-9.webp" class="img-fluid doctor-img" alt="doctor">
+
+    <div class="doctor-info p-4">
+      <h5 class="fw-bold">Dr. Mariam Hani</h5>
+      <span class="doctor-role">Pulmonology</span>
+
+      <p class="doctor-desc mt-3">
+        Providing comprehensive care for respiratory diseases including asthma and chronic lung conditions.
+      </p>
+
+      <div class="experience-badge mb-3">
+        14+ YEARS EXPERIENCE
+      </div>
+
+      <a href="#" class="btn btn-info rounded-pill px-4">
+        Book Appointment
+      </a>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row g-4 justify-content-center">
+      <div class="col-lg-3 col-md-6">
+  <div class="doctor-card text-center">
+
+    <img src="images/img/health/staff-5.webp" class="img-fluid doctor-img" alt="doctor">
+
+    <div class="doctor-info p-4">
+      <h5 class="fw-bold">Dr. Ibrahim Elmasry</h5>
+      <span class="doctor-role">Orthopedics</span>
+
+      <p class="doctor-desc mt-3">
+        Focused on bone, joint, and musculoskeletal treatments, including injuries and surgical care.
+      </p>
+
+      <div class="experience-badge mb-3">
+        17+ YEARS EXPERIENCE
+      </div>
+
+      <a href="#" class="btn btn-info rounded-pill px-4">
+        Book Appointment
+      </a>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+  <div class="doctor-card text-center">
+
+    <img src="images/img/health/staff-7.webp" class="img-fluid doctor-img" alt="doctor">
+
+    <div class="doctor-info p-4">
+      <h5 class="fw-bold">Dr. Mohamed Salem</h5>
+      <span class="doctor-role">Pediatrics</span>
+
+    <p class="doctor-desc mt-3">
+        Dedicated to the health and development of infants, children, and adolescents.
+    </p>
+
+      <div class="experience-badge mb-3">
+        10+ YEARS EXPERIENCE
+      </div>
+
+      <a href="#" class="btn btn-info rounded-pill px-4">
+        Book Appointment
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="doctor-card text-center">
+
+    <img src="images/img/health/staff-12.webp" class="img-fluid doctor-img" alt="doctor">
+
+    <div class="doctor-info p-4">
+      <h5 class="fw-bold">Dr. Heba Wael</h5>
+      <span class="doctor-role">Internal Medicine</span>
+
+      <p class="doctor-desc mt-3">
+        Comprehensive adult healthcare, including chronic disease management and preventive medicine.
+      </p>
+
+      <div class="experience-badge mb-3">
+        20+ YEARS EXPERIENCE
+      </div>
+
+      <a href="#" class="btn btn-info rounded-pill px-4">
+        Book Appointment
+      </a>
+
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6">
+  <div class="doctor-card text-center">
+
+    <img src="images/img/health/staff-14.webp" class="img-fluid doctor-img" alt="doctor">
+
+    <div class="doctor-info p-4">
+      <h5 class="fw-bold">Dr. Sahar Sherif</h5>
+      <span class="doctor-role">General Surgery</span>
+
+      <p class="doctor-desc mt-3">
+          Performing a wide range of surgical procedures using safe and modern medical techniques.
+      </p>
+
+      <div class="experience-badge mb-3">
+        19+ YEARS EXPERIENCE
+      </div>
+
+      <a href="#" class="btn btn-info rounded-pill px-4">
+        Book Appointment
+      </a>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer pt-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <h4 class="footer-logo mb-3">🏥 Salam</h4>
+        <p class="footer-text">
+          We provide trusted healthcare services with experienced doctors,
+          modern equipment, and a patient-first approach.
+        </p>
+
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Doctors</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Our Services</h5>
+        <ul class="footer-links">
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Pulmonology</a></li>
+          <li><a href="#">Diagnostics</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Contact Us</h5>
+        <p class="footer-text">
+          📍 Cairo, Egypt<br>
+          📞 +20 111 222 3333<br>
+          ✉ info@salamhospital.com
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="mt-5">
+
+    <div class="text-center pb-3">
+      <p class="mb-0">© 2026 Salam Hospital. All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+</body>

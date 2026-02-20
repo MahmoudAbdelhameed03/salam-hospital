@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="auth.js"></script>
+
+<body class="home-page">
+      <nav class="navbar navbar-expand-lg  fixed-top bg-white">
+  <div class="container">
+
+
+    <a class="navbar-brand fw-bold text-primary" href="index.html">
+      🏥 Salam
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center ">
+
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="doctors.html">Doctors</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="services.html">Services</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="departments.html">Departments</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="booking.html">Booking</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="records.html">Records</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+          <li class="nav-item" id="loginItem">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+
+        <li class="nav-item" id="registerItem">
+          <a class="nav-link" href="register.html">Register</a>
+        </li>
+
+        <li class="nav-item" id="logoutItem" style="display:none;">
+          <a class="nav-link fw-bold" href="#" onclick="logout()">Logout</a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a href="booking.html" class="btn btn-info rounded-pill px-4">
+            Appointment
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<section class="services-page py-5">
+  <div class="container text-center">
+    <h1 class="services-title fw-bold mb-3">Services</h1>
+    <p class="services-desc mx-auto">
+      We provide a wide range of medical services designed to meet the needs of every patient,
+      ensuring accurate diagnosis, effective treatment, and continuous care.
+    </p>
+  </div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 col-lg-6">
+  <div class="service-card p-4 h-100">
+    
+    <div class="icon-box mb-3">
+      <i class="fa-solid fa-stethoscope"></i>
+    </div>
+
+    <h4 class="fw-bold mb-3">General Consultation</h4>
+
+    <p class="text-muted">
+      Comprehensive medical checkups and personalized care plans to keep you healthy.
+    </p>
+
+    <ul class="list-unstyled service-list">
+      <li><i class="fa-solid fa-circle-check"></i> Comprehensive Health Assessment</li>
+      <li><i class="fa-solid fa-circle-check"></i> Preventive Care Planning</li>
+      <li><i class="fa-solid fa-circle-check"></i> Health Monitoring</li>
+    </ul>
+
+    <a href="#" class="learn-more">Learn More →</a>
+
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-6">
+  <div class="service-card p-4 h-100">
+    
+    <div class="icon-box mb-3">
+      <i class="fa-solid fa-syringe"></i>
+    </div>
+
+    <h4 class="fw-bold mb-3">Vaccination Services</h4>
+
+    <p class="text-muted">
+We offer safe and effective vaccination programs for all age groups to protect individuals and communities from preventable diseases.
+    </p>
+
+    <ul class="list-unstyled service-list">
+      <li><i class="fa-solid fa-circle-check"></i> Adult & Child Immunizations</li>
+      <li><i class="fa-solid fa-circle-check"></i> Travel Vaccines</li>
+      <li><i class="fa-solid fa-circle-check"></i> Seasonal Flu Shots</li>
+    </ul>
+
+    <a href="#" class="learn-more">Learn More →</a>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 col-lg-6">
+  <div class="service-card p-4 h-100">
+    
+    <div class="icon-box mb-3">
+        <i class="fa-solid fa-flask"></i>
+    </div>
+
+    <h4 class="fw-bold mb-3">Diagnostic Services</h4>
+
+    <p class="text-muted">
+    Our advanced diagnostic center delivers fast and accurate test results using modern laboratory and imaging technologies.
+    </p>
+
+    <ul class="list-unstyled service-list">
+      <li><i class="fa-solid fa-circle-check"></i> Laboratory Tests  </li>
+      <li><i class="fa-solid fa-circle-check"></i> X-ray & Imaging Services </li>
+      <li><i class="fa-solid fa-circle-check"></i> Health Screening Packages</li>
+    </ul>
+
+    <a href="#" class="learn-more">Learn More →</a>
+
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-6">
+  <div class="service-card p-4 h-100">
+    
+    <div class="icon-box mb-3">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </div>
+
+    <h4 class="fw-bold mb-3">Cardiology Care</h4>
+
+    <p class="text-muted">
+Our cardiology department specializes in the prevention, diagnosis, and treatment of heart and vascular conditions.
+    </p>
+
+    <ul class="list-unstyled service-list">
+      <li><i class="fa-solid fa-circle-check"></i> Heart Health Checkups  </li>
+      <li><i class="fa-solid fa-circle-check"></i>ECG & Stress Tests  </li>
+      <li><i class="fa-solid fa-circle-check"></i> Chronic Heart Disease Management</li>
+    </ul>
+
+    <a href="#" class="learn-more">Learn More →</a>
+
+  </div>
+</div>
+  </div>
+  </div>
+</section>
+
+</div>
+
+
+
+<footer class="footer pt-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <h4 class="footer-logo mb-3">🏥 Salam</h4>
+        <p class="footer-text">
+          We provide trusted healthcare services with experienced doctors,
+          modern equipment, and a patient-first approach.
+        </p>
+
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Doctors</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Our Services</h5>
+        <ul class="footer-links">
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Pulmonology</a></li>
+          <li><a href="#">Diagnostics</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>Contact Us</h5>
+        <p class="footer-text">
+          📍 Cairo, Egypt<br>
+          📞 +20 111 222 3333<br>
+          ✉ info@salamhospital.com
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="mt-5">
+
+    <div class="text-center pb-3">
+      <p class="mb-0">© 2026 Salam Hospital. All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+</body>

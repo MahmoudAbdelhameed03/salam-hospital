@@ -1,0 +1,277 @@
+.navbar {
+  padding: 30px ;
+  padding: 12px 25px;
+  margin: 20px auto;
+  width: 92%;
+  border-radius: 60px;
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #0dcaf0 ;
+}
+
+.btn-info {
+  color: white;
+  font-weight: 500;
+}
+
+.landing{
+  background: url("images/main-section-image.jpg") center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  overflow: visible;
+  padding-top: 180px;
+
+}
+.landing::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);      
+  background: rgba(0,0,0,0.45);    
+}
+
+.landing-content{
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+}
+
+
+.landing-content h1{
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.landing-content p{
+  color: #e0e0e0;
+  margin-bottom: 25px;
+  font-size: larger;
+}
+.landing .btn-info,
+.landing .btn-outline-info,
+.about-btn{
+  border-radius:20px;
+  width: 250;
+  padding: 15px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.landing-cards{
+  margin-top: 80px;  
+  padding-bottom: 60px;
+  
+}
+
+.landing-card{
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  color:black;
+  transition: 0.3s;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.45) ;
+  text-align: center;
+}
+
+.landing-card:hover{
+  transform: translateY(-5px);
+}
+
+.icon-box{
+  width: 70px;
+  height: 70px;
+  background: rgba(9, 143, 196, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 22px;
+  color: #0d24f0;
+  margin:0 auto ;
+}
+
+.first-p{
+  font-weight: 600;
+  font-size: 23;
+  color: #5b5c64;
+}
+.second-p{
+  font-size: 20;
+}
+.feature-card{
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+.feature-icon{
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(13,202,240,0.15);
+  color: #0dcaf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+.about-image img{
+  height: 600;
+  border-radius: 25px;
+}
+
+.footer{
+  background: #0f172a;
+  color: #cbd5e1;
+}
+
+.footer h5{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-logo{
+  color: #0dcaf0;
+  font-weight: 700;
+}
+
+.footer-text{
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-links{
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li{
+  margin-bottom: 10px;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: 0.3s;
+}
+
+.footer-links a:hover{
+  color: #0dcaf0;
+}
+
+.social-icons a{
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover{
+  color: #0dcaf0;
+}
+.doctor-card{
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.doctor-card:hover{
+  transform: translateY(-8px);
+}
+
+.doctors-title,
+.services-title{
+  font-size: 56px;
+  letter-spacing: 1px;
+  margin-top: 50;
+}
+
+
+.doctor-img{
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.doctor-info h5{
+  color: #1b2a3a;
+}
+
+.doctor-role{
+  color: #0dcaf0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.doctor-desc{
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.experience-badge{
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(13,202,240,0.15);
+  color: #0dcaf0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.service-card{
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.service-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.icon-box{
+  width: 70px;
+  height: 70px;
+  background: #e9f6f8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box i{
+  font-size: 28px;
+  color: #0d8aa6;
+}
+
+.service-list li{
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.service-list i{
+  color: #0d8aa6;
+  margin-right: 8px;
+}
+
+.learn-more{
+  text-decoration: none;
+  color: #0d8aa6;
+  font-weight: 600;
+}
+
+
+
