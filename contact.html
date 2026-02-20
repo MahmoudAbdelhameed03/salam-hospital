@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/rStyle.css">
+
+</head>
+
+<body class="bg-light">
+    <header id="header py-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/hospital-logo-design-with-shield-icon_11120008.png!sw800" alt="Website Logo"
+                    height="50">
+                <h2>Hospital</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="doctors.html">Doctors</a>
+                    <a class="nav-link" href="doctorr-details.html">Doctor Details</a>
+                    <a class="nav-link" href="login.html">login</a>
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    <a class="nav-link" href="booking.html">Booking</a>
+                    <a class="nav-link" href="register.html">Register</a>
+                    <a class="nav-link" href="records.html">Records</a>
+                    <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="departments.html" role="button" aria-expanded="false">
+                            Departments
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                            <li><a class="dropdown-item" href="#">Neurology</a></li>
+                            <li><a class="dropdown-item" href="#">Orthopedics</a></li>
+                            <li><a class="dropdown-item" href="#">Pediatrics</a></li>
+                            <li><a class="dropdown-item" href="#">Dermatology</a></li>
+                            <li><a class="dropdown-item" href="#">ENT</a></li>
+                            <li><a class="dropdown-item" href="#">Gynecology</a></li>
+                            <li><a class="dropdown-item" href="#">General Surgery</a></li>
+                            <li><a class="dropdown-item" href="#">Internal Medicine</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+            <a href="booking.html" class="btn appointment-btn ms-lg-3"> Appointment</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h2 class="text-center my-4">Contact Us</h2>
+        </section>
+        <section class="container mb-5">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="section-wrapper">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <div class="custom-card mb-3">
+                            <div class="icon-container">
+                                <i class="bi bi-pin-map-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Our Location</h5>
+                                <p class="mb-0">4952 Hilltop Dr, Anytown, CA 90210</p>
+                            </div>
+                        </div>
+                        <div class="custom-card mb-3">
+                            <div class="icon-container">
+                                <i class="bi bi-envelope-open"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email Us</h5>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="custom-card mb-3">
+                            <div class="icon-container">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Call Us</h5>
+                                <p class="mb-0">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="custom-card">
+                            <div class="icon-container">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Working Hours</h5>
+                                <p class="mb-0">Monday-Saturday: 9AM - 7PM</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="contact-form">
+                        <div class="contact-map mb-3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6909.063479214761!2d31.702564169893193!3d30.021599246285618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f5172d0a0a8f%3A0x54b12d0e2e15ef55!2sITI%20-%20Information%20Technology%20Institute!5e0!3m2!1sen!2seg!4v1771451128387!5m2!1sen!2seg"
+                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+
+                        <div class="card shadow-sm border-0 rounded-4 p-4">
+                            <form id="form">
+                                <div class="mb-3">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" id="name" class="form-control">
+                                    <span id="nameError" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-control">
+                                    <span id="emailError" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4"></textarea>
+                                    <span id="messageError" class="text-danger"></span>
+                                </div>
+                                <button class="btn next-btn w-100">Book Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+                        <span class="sitename">Hospital</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact pt-3">
+                        <p>A108 Adam Street</p>
+                        <p>New York, NY 535022</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                        <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
