@@ -48,7 +48,7 @@ main {
     width: 100%;
 }
 
-.appointment-btn{
+/* .appointment-btn{
     background-color: #0b8097;
     color: white;
     padding: 10px 15px;
@@ -60,6 +60,11 @@ main {
 .appointment-btn:hover {
     background: #1d8aa6;
     color: white;
+} */
+
+.btn-info {
+  color: white;
+  font-weight: 500;
 }
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -89,37 +94,54 @@ main {
 
 
 /* ----------------------------footer--------------------------- */
-footer{
-    background-color: rgb(239, 235, 229);
-    padding:10px 0;
+.footer{
+  background: #0f172a;
+  color: #cbd5e1;
+}
 
+.footer h5{
+  color: white;
+  margin-bottom: 20px;
 }
-footer p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 6px;
+
+.footer-logo{
+  color: #0dcaf0;
+  font-weight: 700;
 }
-.sitename {
-    font-size: 24px;
-    font-weight: 700;
-    color: #0b8097;
-    
+
+.footer-text{
+  font-size: 14px;
+  line-height: 1.7;
 }
-.social-links a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #f0f0f0;
-    margin-right: 10px;
-    color: #2aa5c3;
-    transition: 0.3s ease;
+
+.footer-links{
+  list-style: none;
+  padding: 0;
 }
-.social-links a:hover {
-    background: #2aa5c3;
-    color: white;
+
+.footer-links li{
+  margin-bottom: 10px;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: 0.3s;
+}
+
+.footer-links a:hover{
+  color: #0dcaf0;
+}
+
+.social-icons a{
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover{
+  color: #0dcaf0;
 }
 
 /* ---------------body-------------------------------------- */
