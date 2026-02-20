@@ -100,7 +100,7 @@
                         <div class="appointment-schedule">
                             <h4>Select date and time</h4>
                             <div class="date-input mb-4">
-                                <input type="date" id="appointment-date" class="form-control">
+                                <input type="date" id="appointment-date" class="form-control" required>
                             </div>
                             <div class="time-slots d-flex flex-wrap gap-3">
                                 <button class="time-btn">10:00 AM</button>
@@ -118,7 +118,8 @@
                         <div class="appointment-details">
                             <div class="mb-3">
                                 <label class="form-label">Department</label>
-                                <select id="departmentSelect" class="form-select">
+                                <span id="deptError" class="text-danger"></span>
+                                <select id="departmentSelect" class="form-select" required>
                                     <option value="">Select Department</option>
                                     <option value="Cardiology">Cardiology</option>
                                     <option value="Neurology">Neurology</option>
@@ -131,7 +132,8 @@
                         </div>
                         <div class="mb-4">
                             <label class="form-label">Doctor</label>
-                            <select id="doctorSelect" class="form-select">
+                            <span id="drError" class="text-danger"></span>
+                            <select id="doctorSelect" class="form-select" required>
                                 <option value="">Select Doctor</option>
                             </select>
                         </div>
@@ -142,19 +144,19 @@
                                 <form id="form">
                                     <div class="mb-3">
                                         <label class="form-label">Full Name</label>
-                                        <input type="name" id="name" class="form-control" placeholder="Your Full Name">
-                                        
+                                        <input type="name" id="name" class="form-control" placeholder="Your Full Name" required>
+
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Email</label>
-                                        <input type="email" id="email" class="form-control" placeholder="Your Email">
-                                        
+                                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Phone Number</label>
-                                        <input type="text" id="phone" class="form-control" placeholder="Your Phone number">
+                                        <input type="text" id="phone" class="form-control" placeholder="Your Phone number" required>
                                     </div>
-                                    <button class="btn next-btn w-100">Book Now</button>
+                                    <button type="submit" class="btn next-btn w-100">Book Now</button>
                                 </form>
                             </div>
                         </div>
@@ -221,6 +223,73 @@
     </div>
   </div>
 </footer>
+
+    <script>
+        let selectedTime= ""
+
+        document.querySelectorAll(".time-btn").forEach(btn => {
+            btn.addEventListener("click", function(){
+                document.querySelectorAll(".time-btn").forEach(btn => {
+                    btn.classList.remove("active")
+                });
+                this.classList.add("active")
+                selectedTime=this.textContent
+            })
+        });
+
+        document.getElementById("form").addEventListener("submit", function(e){
+            e.preventDefault()
+            bookAppointment()
+        })
+
+        function bookAppointment(){
+
+            // let currentUser = JSON.parse(localStorage.getItem("currentUser"))
+            // if(!currentUser){
+            //     alert("Register or login first to book")
+            //     window.location.href("login.html")
+            //     return
+            // }
+
+            let name = document.getElementById("name").value.trim()
+            let email = document.getElementById("email").value.trim()
+            let phone = document.getElementById("phone").value.trim()
+
+            let date= document.getElementById("appointment-date").value
+            let department= document.getElementById("departmentSelect").value
+            let doctor= document.getElementById("doctorSelect").value
+
+            document.getElementById("deptError").textContent = ""
+            document.getElementById("drError").textContent = ""
+
+            if(department===""){
+                document.getElementById("deptError").textContent = "Please choose a deptartment"
+                return
+            }
+
+            if(doctor===""){
+                document.getElementById("drError").textContent = "Please choose a doctor"
+                return
+            }
+
+            let appointment={
+                name,
+                email,
+                phone,
+                date,
+                selectedTime,
+                department,
+                doctor
+            }
+
+            let appointments = JSON.parse(localStorage.getItem("appointments")) || []
+            appointments.push(appointment)
+            localStorage.setItem("appointments", JSON.stringify(appointments))
+            alert("appointment booked successfully")
+            document.getElementById("form").reset()
+
+        }
+    </script>
 
 </body>
 

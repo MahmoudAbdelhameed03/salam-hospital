@@ -234,19 +234,19 @@
                 return
             }
 
-            let users=JSON.parse(localStorage.getItem("users")) || []
+            let users = JSON.parse(localStorage.getItem("users")) || []
 
-            let usernameExists = users.find(user=> 
-                user.username=== username
+            let usernameExists = users.find(user =>
+                user.username === username
             )
-            let emailExists = users.find(user=> 
-                user.email=== email
+            let emailExists = users.find(user =>
+                user.email === email
             )
-            if(usernameExists){
+            if (usernameExists) {
                 document.getElementById("usernameError").textContent = "Username is taken"
                 return
             }
-            if(emailExists){
+            if (emailExists) {
                 document.getElementById("emailError").textContent = "Email is already registered"
                 return
             }
@@ -258,7 +258,7 @@
             }
             users.push(newuser)
 
-            localStorage.setItem("users",JSON.stringify(users))
+            localStorage.setItem("users", JSON.stringify(users))
             alert("Registered Successfully")
             window.location.href = "login.html"
 

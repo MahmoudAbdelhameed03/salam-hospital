@@ -148,6 +148,11 @@ main {
     color: white;
 }
 
+.time-btn.active{
+    background-color:#1d8aa6;
+    color: white;
+}
+
 /* -------------------------contact-------------------------------------- */
 .section-wrapper {
   background: linear-gradient(135deg, #1d8aa6, #15768f);
