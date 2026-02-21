@@ -164,7 +164,7 @@
                                     <textarea class="form-control" id="message" rows="4" required></textarea>
                                     <span id="messageError" class="text-danger"></span>
                                 </div>
-                                <button class="btn next-btn w-100">Book Now</button>
+                                <button class="btn next-btn w-100">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -230,6 +230,34 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault()
+            sendMsg()
+        })
+
+        function sendMsg() {
+            let name = document.getElementById("name").value.trim()
+            let email = document.getElementById("email").value.trim()
+            let message = document.getElementById("message").value.trim()
+            
+            let newMsg = {
+                name,
+                email,
+                message
+            }
+
+            let messages= JSON.parse(localStorage.getItem("messages"))||[]
+            messages.push(newMsg)
+
+            localStorage.setItem("messages", JSON.stringify(messages))
+            alert("Message sent successfully")
+
+            document.getElementById("form").reset()
+        }
+
+    </script>
 
 </body>
 
