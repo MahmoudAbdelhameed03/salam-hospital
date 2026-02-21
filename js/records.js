@@ -37,6 +37,14 @@ function showAppointments(list) {
       </tr>
     `;
   });
+  let total = list.reduce((acc) => acc + 1, 0);
+
+  tableBody.innerHTML += `
+    <tr class="table-info fw-bold">
+      <td colspan="4">Total Appointments</td>
+      <td>${total}</td>
+    </tr>
+  `;
 
 }
 async function deleteAppointment(id) {
