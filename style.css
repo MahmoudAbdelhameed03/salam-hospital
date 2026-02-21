@@ -5,6 +5,15 @@
   width: 92%;
   border-radius: 60px;
 }
+.navbar-logo{
+  height:45px;
+  width:auto;
+}
+.brand-text{
+  font-size:22px;
+  font-weight:bold;
+  color:#0d6efd; 
+}
 
 .navbar .nav-link {
   font-weight: 600;
@@ -133,6 +142,11 @@
 .footer{
   background: #0f172a;
   color: #cbd5e1;
+}
+
+.footer-logo-img{
+  height:45px;   
+  width:auto;
 }
 
 .footer h5{
