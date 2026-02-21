@@ -1,3 +1,7 @@
+if(localStorage.getItem("isLoggedIn") !== "true"){
+  window.location.href = "login.html";
+}
+
 const APPOINTMENTS_URL = "https://ybfdykdxlapxwunmdwds.supabase.co/rest/v1/appointments";
 const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InliZmR5a2R4bGFweHd1bm1kd2RzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE1OTAxMzUsImV4cCI6MjA4NzE2NjEzNX0.-4Ql2ZeIN5byKIelO5d2I_kxDGdpTHJM3s2qLRnuAp8";  
 
@@ -30,9 +34,12 @@ function showAppointments(list) {
         <td>${app.department}</td>
         <td>${app.date}</td>
         <td>${app.status}</td>
-        <td>
+        <td class="d-flex gap-2">
+          <button onclick="updateAppointment('${app.id}','${app.date}')" 
+            class="btn btn-warning btn-sm">Update</button>
+
           <button onclick="deleteAppointment('${app.id}')" 
-            class="btn btn-danger btn-sm">Delete</button>
+          class="btn btn-danger btn-sm">Delete</button>
         </td>
       </tr>
     `;
@@ -59,6 +66,26 @@ async function deleteAppointment(id) {
       }
     }
   );
+
+  loadAppointments();
+}
+async function updateAppointment(id, currentDate) {
+
+  const newDate = prompt("Enter new Date:", currentDate);
+
+  if (!newDate) return;
+
+  await fetch(`${APPOINTMENTS_URL}?id=eq.${id}`, {
+    method: "PATCH",
+    headers: {
+      apikey: API_KEY,
+      Authorization: `Bearer ${API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      date: newDate
+    })
+  });
 
   loadAppointments();
 }
