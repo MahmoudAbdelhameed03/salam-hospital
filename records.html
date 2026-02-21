@@ -200,6 +200,13 @@
         `
     }).join("")
 
+    let total = userAppointments.reduce((acc, app) => acc + 1, 0)
+    table.innerHTML += `
+    <tr class="table-info fw-bold">
+        <td colspan="3">Total Appointments</td>
+        <td>${total}</td>
+    </tr>`
+
     function deleteAppoointment(index) {
         let appointments = JSON.parse(localStorage.getItem("appointments")) || []
         let currentUser = JSON.parse(localStorage.getItem("currentUser"))
