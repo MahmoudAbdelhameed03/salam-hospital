@@ -122,9 +122,12 @@
                                 <select id="departmentSelect" class="form-select" required>
                                     <option value="">Select Department</option>
                                     <option value="Cardiology">Cardiology</option>
-                                    <option value="Neurology">Neurology</option>
+                                    <option value="Neurology">Neuroloy</option>
                                     <option value="Orthopedics">Orthopedics</option>
                                     <option value="Pediatrics">Pediatrics</option>
+                                    <option value="Pediatrics">Pulmonology</option>
+                                    <option value="Pediatrics">Internal Medicine</option>
+                                    <option value="Pediatrics">General Surgery</option>
                                 </select>
                             </div>
                             <form action="#">
@@ -223,74 +226,7 @@
     </div>
   </div>
 </footer>
-
-    <script>
-        let selectedTime= ""
-
-        document.querySelectorAll(".time-btn").forEach(btn => {
-            btn.addEventListener("click", function(){
-                document.querySelectorAll(".time-btn").forEach(btn => {
-                    btn.classList.remove("active")
-                });
-                this.classList.add("active")
-                selectedTime=this.textContent
-            })
-        });
-
-        document.getElementById("form").addEventListener("submit", function(e){
-            e.preventDefault()
-            bookAppointment()
-        })
-
-        function bookAppointment(){
-
-            // let currentUser = JSON.parse(localStorage.getItem("currentUser"))
-            // if(!currentUser){
-            //     alert("Register or login first to book")
-            //     window.location.href("login.html")
-            //     return
-            // }
-
-            let name = document.getElementById("name").value.trim()
-            let email = document.getElementById("email").value.trim()
-            let phone = document.getElementById("phone").value.trim()
-
-            let date= document.getElementById("appointment-date").value
-            let department= document.getElementById("departmentSelect").value
-            let doctor= document.getElementById("doctorSelect").value
-
-            document.getElementById("deptError").textContent = ""
-            document.getElementById("drError").textContent = ""
-
-            if(department===""){
-                document.getElementById("deptError").textContent = "Please choose a deptartment"
-                return
-            }
-
-            if(doctor===""){
-                document.getElementById("drError").textContent = "Please choose a doctor"
-                return
-            }
-
-            let appointment={
-                name,
-                email,
-                phone,
-                date,
-                selectedTime,
-                department,
-                doctor
-            }
-
-            let appointments = JSON.parse(localStorage.getItem("appointments")) || []
-            appointments.push(appointment)
-            localStorage.setItem("appointments", JSON.stringify(appointments))
-            alert("appointment booked successfully")
-            document.getElementById("form").reset()
-
-        }
-    </script>
-
+  <script src="js/booking.js"></script>
 </body>
 
 </html>
