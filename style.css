@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 .navbar {
   padding: 30px ;
   padding: 12px 25px;
@@ -12,22 +16,44 @@
 .brand-text{
   font-size:22px;
   font-weight:bold;
-  color:#0d6efd; 
+  color:#044dbb; 
 }
 
 .navbar .nav-link {
   font-weight: 600;
   margin-right: 10px;
+  white-space: nowrap;
+  position: relative;
 }
 
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
   color: #0dcaf0 ;
 }
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background: #35caef;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
 
 .btn-info {
   color: white;
   font-weight: 500;
+}
+.btn-info:hover{
+  color: white;
+  background-color: #0d8aa6;
+  transition: 0.3s ease;
 }
 
 .landing{
@@ -155,7 +181,7 @@
 }
 
 .footer-logo{
-  color: #0dcaf0;
+  color: #044dbb;
   font-weight: 700;
 }
 
